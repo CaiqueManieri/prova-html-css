@@ -29,24 +29,26 @@
                 <h1 class="title">Cadastro</h1>
 
                 <div class="caixaCadastro">
-                    <div>
-                        <input id="nomePessoa" placeholder="Nome" type="text" name="nome" minlength="3" maxlength="30" required/>
+                    <div class="borderArea">
+                        <input class="pessoal" id="nomePessoa" placeholder="Nome" type="text" name="nome" minlength="3" maxlength="30" required/>
                     </div>
     
-                    <div>
-                        <input id="idadePessoa" placeholder="Idade" type="number" name="idade"/>
-                    </div>
-    
-                    <div>
-                        <input id="emailPessoa" placeholder="E-mail" type="email" name="email" minlength="8" maxlength="20" required/>
+                    <div class="borderArea">
+                        <input class="pessoal" id="emailPessoa" placeholder="E-mail" type="email" name="email" minlength="8" maxlength="20" required/>
                     </div>
 
-                    <div class="genero">
-                        <select id="sexoPessoa" placeholder="Sexo" type="" name="sexo">
-                            <option>Masculino</option>
-                            <option>Feminino</option>
-                            <option>Não Binário</option>
-                        </select>
+                    <div class="duplaFinal">
+                        <div class="borderArea2">
+                            <input id="idadePessoa" placeholder="Idade" type="number" name="idade"/>
+                        </div>
+    
+                        <div class="genero">
+                            <select id="sexoPessoa" placeholder="Sexo" type="" name="sexo">
+                                <option>Masculino</option>
+                                <option>Feminino</option>
+                                <option>Não Binário</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
@@ -54,7 +56,7 @@
                     <p class="atualizacoes">Quero receber atualizações por email<input type="checkbox" class="checkbox" id="checkbox" name="scales" checked /></p>
                 </div>
     
-                <div>
+                <div class="btnCentralizar">
                     <button class="btnCadastrar" type="submit">Cadastrar</button>
                 </div>
             </form>

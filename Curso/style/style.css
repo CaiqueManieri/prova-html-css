@@ -237,7 +237,7 @@ footer {
     display: flex;
 }
 
-.container input {
+.container .pessoal {
     color: rgb(255, 255, 255);
     background-color: rgb(85, 85, 85);
     border-radius: 8px;
@@ -246,6 +246,22 @@ footer {
     padding-right: 120px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+#idadePessoa {
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 85, 85);
+    border-radius: 8px;
+    margin: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btnCentralizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container select {
@@ -254,7 +270,7 @@ footer {
     border-radius: 8px;
     margin: 5px;
     padding-left: 10px;
-    padding-right: 120px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -262,10 +278,17 @@ footer {
 .genero {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container input::placeholder {
     color: rgb(255, 255, 255);
+}
+
+.duplaFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .checkboxTxt {
@@ -285,11 +308,10 @@ footer {
 .btnCadastrar {
     font-size: 15px;
     font-weight: bold;
+
     padding: 15px;
-    margin: 10px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    margin-left: 100px;
+    margin-top: 30px;
+
     justify-content: center;
     display: flex;
     cursor: pointer;
