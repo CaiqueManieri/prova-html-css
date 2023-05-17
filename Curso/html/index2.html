@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/Curso/style/style.css" media="screen" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+        <title>Cadastro</title>
+    </head>
+    
+    <body>
+        <header>
+            <nav class="barraNavegacao">
+                <ul>
+                    <li><img src="/Curso/img/Logotipo_empresa.png" class="logo"/></li>
+                    <li><a class="bar" href="index.html" style="text-decoration: none;">Home</a></li>
+                    <li><a class="bar" href="index2.html" style="text-decoration: underline;">Cadastro</a></li>
+                    <li><a class="bar" href="index3.html" style="text-decoration: none;">Valores</a></li>
+                </ul>
+                <button id="btnFuncao" class="btnColor"><img id="btnImagem" src="../img/icon moon.png" /></button>
+            </nav>
+        </header>
+
+        <div class="container">
+            <form action="DestinoForm" method="post">
+                <h1 class="title">Cadastro</h1>
+
+                <div class="caixaCadastro">
+                    <div>
+                        <input id="nomePessoa" placeholder="Nome" type="text" name="nome" minlength="3" maxlength="30" required/>
+                    </div>
+    
+                    <div>
+                        <input id="idadePessoa" placeholder="Idade" type="number" name="idade"/>
+                    </div>
+    
+                    <div>
+                        <input id="emailPessoa" placeholder="E-mail" type="email" name="email" minlength="8" maxlength="20" required/>
+                    </div>
+
+                    <div class="genero">
+                        <select id="sexoPessoa" placeholder="Sexo" type="" name="sexo">
+                            <option>Masculino</option>
+                            <option>Feminino</option>
+                            <option>Não Binário</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="checkboxTxt">
+                    <p class="atualizacoes">Quero receber atualizações por email<input type="checkbox" class="checkbox" id="checkbox" name="scales" checked /></p>
+                </div>
+    
+                <div>
+                    <button class="btnCadastrar" type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p class="final">Todos os direitos reservados</p>
+        </footer>
+
+        <script type="text/javascript" src="../script/script.js"></script>
+    </body>
+</html>
