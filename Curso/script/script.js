@@ -1,3 +1,44 @@
+var app = new Vue({
+    el: '#app',
+    data: {
+        lista: [],
+        obj: {
+            nome: '',
+            email: '',
+            telefone: '',
+            sexo: 'Masculino',
+        }
+    }
+})
+
+function adicionarPessoa() {
+    var novo = {
+        nome: app.obj.nome,
+        email: app.obj.email,
+        telefone: app.obj.telefone,
+        sexo: app.obj.sexo
+    }
+
+    app.obj.nome = ""
+    app.obj.email = ""
+    app.obj.telefone = ""
+    app.obj.sexo = "Masculino"
+
+    app.lista.push(novo)
+
+    alert()
+
+    console.log(novo)
+}
+
+function alert() {
+    Swal.fire(
+        'Sucesso!',
+        'Cadastro enviado',
+        'success'
+    )
+}
+
 //Colocar modo dark
 var themeButton = document.getElementById('btnFuncao');
 var btnImagem = document.getElementById('btnImagem');   

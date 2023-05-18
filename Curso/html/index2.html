@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/Curso/style/style.css" media="screen" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,60 +13,64 @@
     </head>
     
     <body>
-        <header>
-            <nav class="barraNavegacao">
-                <ul>
-                    <li><img src="/Curso/img/Logotipo_empresa.png" class="logo"/></li>
-                    <li><a class="bar" href="index.html" style="text-decoration: none;">Home</a></li>
-                    <li><a class="bar" href="index2.html" style="text-decoration: underline;">Cadastro</a></li>
-                    <li><a class="bar" href="index3.html" style="text-decoration: none;">Valores</a></li>
-                </ul>
-                <button id="btnFuncao" class="btnColor"><img id="btnImagem" src="../img/icon moon.png" /></button>
-            </nav>
-        </header>
-
-        <div class="container">
-            <form action="DestinoForm" method="post">
-                <h1 class="title">Cadastro</h1>
-
-                <div class="caixaCadastro">
-                    <div class="borderArea">
-                        <input class="pessoal" id="nomePessoa" placeholder="Nome" type="text" name="nome" minlength="3" maxlength="30" required/>
-                    </div>
+        <div id="app">
+            <header>
+                <nav class="barraNavegacao">
+                    <ul>
+                        <li><img src="/Curso/img/Logotipo_empresa.png" class="logo"/></li>
+                        <li><a class="bar" href="index.html" style="text-decoration: none;">Home</a></li>
+                        <li><a class="bar" href="index2.html" style="text-decoration: underline;">Cadastro</a></li>
+                        <li><a class="bar" href="index3.html" style="text-decoration: none;">Valores</a></li>
+                    </ul>
+                    <button id="btnFuncao" class="btnColor"><img id="btnImagem" src="../img/icon moon.png" /></button>
+                </nav>
+            </header>
     
-                    <div class="borderArea">
-                        <input class="pessoal" id="emailPessoa" placeholder="E-mail" type="email" name="email" minlength="8" maxlength="20" required/>
-                    </div>
-
-                    <div class="duplaFinal">
-                        <div class="borderArea2">
-                            <input id="idadePessoa" placeholder="Idade" type="number" name="idade"/>
+            <div class="container">
+                <form action="#" method="post" >
+                    <h1 class="title">Cadastro</h1>
+    
+                    <div class="caixaCadastro">
+                        <div class="borderArea">
+                            <input v-model="obj.nome" class="pessoal" id="nomePessoa" placeholder="Nome" type="text" name="nome" minlength="3" maxlength="30" />
+                        </div>
+        
+                        <div class="borderArea">
+                            <input v-model="obj.email" class="pessoal" id="emailPessoa" placeholder="E-mail" type="email" name="email" minlength="8" maxlength="50" />
                         </div>
     
-                        <div class="genero">
-                            <select id="sexoPessoa" placeholder="Sexo" type="" name="sexo">
-                                <option>Masculino</option>
-                                <option>Feminino</option>
-                                <option>Não Binário</option>
-                            </select>
+                        <div class="duplaFinal">
+                            <div class="borderArea2">
+                                <input v-model="obj.telefone" id="idadePessoa" placeholder="Telefone" type="number" name="telefone"/>
+                            </div>
+        
+                            <div class="genero">
+                                <select  v-model="obj.sexo" id="sexoPessoa" placeholder="Sexo" type="" name="sexo">
+                                    <option>Masculino</option>
+                                    <option>Feminino</option>
+                                    <option>Não Binário</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="checkboxTxt">
-                    <p class="atualizacoes">Quero receber atualizações por email<input type="checkbox" class="checkbox" id="checkbox" name="scales" checked /></p>
-                </div>
     
-                <div class="btnCentralizar">
-                    <button class="btnCadastrar" type="submit">Cadastrar</button>
-                </div>
-            </form>
+                    <div class="checkboxTxt">
+                        <p class="atualizacoes">Quero receber atualizações por email<input type="checkbox" class="checkbox" id="checkbox" name="scales" checked /></p>
+                    </div>
+        
+                    <div class="btnCentralizar">
+                        <button type="button" onclick="adicionarPessoa()" class="btnCadastrar" >Cadastrar</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
         <footer>
-            <p class="final">Todos os direitos reservados</p>
+            <p class="final">Todos os direitos reservados © Caique Manieri</p>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script type="text/javascript" src="../script/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
     </body>
 </html>
