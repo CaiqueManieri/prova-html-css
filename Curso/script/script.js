@@ -154,3 +154,10 @@ function playEvent3() {
     soundBanner3.volume = 0.5;
     soundBanner3.play()
 }
+
+function playImg() {
+    var soundImg = document.getElementById('soundImg');
+    soundImg.currentTime = 0;
+    soundImg.volume = 0.5;
+    soundImg.play()
+}
