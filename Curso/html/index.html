@@ -20,7 +20,7 @@
                     <li><a class="bar2" href="index2.html" style="text-decoration: none;">Cadastro</a></li>
                     <li><a class="bar3" href="index3.html" style="text-decoration: none;">Valores</a></li>
                 </ul>
-                <button id="btnFuncao" class="btnColor"><img id="btnImagem" src="../img/icon moon.png" /></button>
+                <button id="btnFuncao" class="btnColor" onclick="audioEfect()"><img id="btnImagem" src="../img/icon moon.png" /></button>
             </nav>
         </header>
         
@@ -43,6 +43,18 @@
         <footer>
             <p class="final">Todos os direitos reservados © Caique Manieri</p>
         </footer>
+
+        <audio id="soundSun">
+            <source src="../audios/sunSound.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="soundMoon">
+            <source src="../audios/moonSound.mp3" type="audio/mpeg">
+        </audio>
+
+        <audio id="soundNav">
+            <source src="../audios/navSound.mp3" type="audio/mpeg">
+        </audio>
 
         <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
         <script type="text/javascript" src="../script/script.js"></script>
